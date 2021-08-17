@@ -1571,7 +1571,7 @@ $buttonIsPort3389Open_Click={
 	#TODO: Place custom script here
 	$Variable = [System.Net.Dns]::GetHostName()
 	[System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
-	# $Variable2 = TNC $Variable -Port 443
+	$Variable2 = TNC $Variable -Port 443
 	[System.Windows.Forms.MessageBox]::Show("Port 3389 is not open.")
 }
 
@@ -1580,7 +1580,7 @@ $buttonIsPort5938Open_Click={
 	#TODO: Place custom script here
 	$Variable = [System.Net.Dns]::GetHostName()
 	[System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
-	# $Variable2 = TNC $Variable -Port 443
+	$Variable2 = TNC $Variable -Port 443
 	[System.Windows.Forms.MessageBox]::Show("Port 5938 is open.")
 }
 ]]></Code>
